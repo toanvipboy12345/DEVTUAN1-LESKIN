@@ -1,0 +1,179 @@
+.footer {
+  background-color: #222222;
+}
+
+.footer .container {
+  max-width: 100%;
+  padding: 0 150px; /* Thêm padding ngang để cân đối */
+  margin: 0 auto; /* Căn giữa */
+}
+
+
+.footer .container .inner-content li {
+  color: rgb(122, 122, 122);
+  margin-bottom: 5px;
+}
+
+.footer .container h5 {
+  color: #b7b7b7;
+  margin-bottom: 1rem;
+}
+.footer .container h6{
+  color: #b7b7b7;
+}
+.footer .container .inner-content {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.footer .app a {
+  overflow: hidden;
+}
+
+.footer .app img {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+
+.footer .signup a {
+  margin-right: 1rem;
+}
+
+.footer .inner-menu {
+  margin-top: 1rem;
+}
+
+.footer .inner-form {
+  background-color: #393939;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.footer .inner-form {
+  background-color: #393939;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.footer .inner-form input {
+  background-color: #393939;
+  color: #fff;
+  border-right: 1px solid #555; /* Chỉ viền trái */
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 15px;
+  flex-grow: 1;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+
+.footer .inner-form input::placeholder {
+  color: #bbb;
+}
+
+.footer .inner-form button {
+  background-color: #393939;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer .container {
+    padding: 0 50px; /* Giảm padding ngang */
+  }
+
+  .footer .row {
+    justify-content: space-around; /* Điều chỉnh khoảng cách giữa các cột */
+  }
+
+  .footer .col-md-3 {
+    flex: 0 0 30%; /* Mỗi cột chiếm 30% chiều rộng */
+    max-width: 30%;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+  }
+
+  .footer h5, .footer h6 {
+    font-size: 1rem; /* Điều chỉnh kích thước tiêu đề */
+  }
+}
+@media (max-width: 767px) {
+  .footer .container {
+    padding: 0 15px; /* Giảm padding ngang */
+  }
+
+  .footer .row {
+    flex-direction: column; /* Xếp các cột thành hàng dọc */
+    align-items: center; /* Căn giữa nội dung */
+  }
+
+  .footer .col-md-3 {
+    flex: 0 0 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 100%;
+    margin-bottom: 30px; /* Thêm khoảng cách dưới */
+    text-align: center; /* Căn giữa nội dung */
+  }
+
+  .footer .app img, .footer .signup img {
+    margin: 0 auto; /* Căn giữa hình ảnh */
+  }
+  .contact-icon img {
+    width: 50px; /* Kích thước icon */
+    height: 50px;
+    border-radius: 50%; /* Bo tròn icon */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .contact-icon {
+    position: fixed;
+    bottom: 50px; /* Cách đáy 20px */
+    left: auto; /* Hủy vị trí bên trái */
+    right: 10px; /* Đặt icon bên phải */
+    z-index: 1000; /* Đảm bảo icon luôn hiển thị trên cùng */
+  }
+
+}
+.footer h5 {
+  position: relative; /* Để sử dụng ::before */
+  color: #fff; /* Màu chữ */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer h5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px; /* Độ dài của đường kẻ */
+  height: 3px; /* Độ dày của đường kẻ */
+  background-color: #ECB847; /* Màu sắc của đường kẻ */
+  transform: translateY(-10px); /* Điều chỉnh vị trí đường kẻ */
+}
+.contact-icon {
+  position: fixed;
+  bottom: 40px; /* Cách đáy 20px */
+  left: 40px; /* Cách trái 20px */
+  z-index: 1000; /* Đảm bảo icon luôn hiển thị trên cùng */
+}
+
+.contact-icon img {
+  width: 80px; /* Kích thước icon */
+  height: 80px;
+  border-radius: 50%; /* Bo tròn icon */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;  
+}
